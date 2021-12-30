@@ -5,13 +5,13 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-// class Role extends Model
+// class Permission extends Model
 // {
 //     use HasFactory;
 // }
-use Laratrust\Models\LaratrustRole;
+use Laratrust\Models\LaratrustPermission;
 
-class Role extends LaratrustRole
+class Permission extends LaratrustPermission
 {
     public $guarded = [];
 }

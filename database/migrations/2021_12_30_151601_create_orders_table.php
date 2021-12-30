@@ -15,6 +15,15 @@ class CreateOrdersTable extends Migration
     {
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
+            $table->string('code');
+            $table->integer('customer');
+            $table->integer('staff');
+            $table->foreignId('location_id');
+            $table->date('date');
+            $table->integer('net');
+            $table->integer('tax')->nullable();
+            $table->integer('gross');
+            $table->enum('lunas', ['Lunas', 'Belum Lunas'])->default('Belum Lunas');
             $table->timestamps();
         });
     }
