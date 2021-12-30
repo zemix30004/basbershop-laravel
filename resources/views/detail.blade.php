@@ -78,8 +78,8 @@
                   <td>0.0</td>
                 </tr>
                 <tr>
-                  <th>Gross</th>
-                  <td>{{ $total }}</td>
+                    <th>Gross Total</th>
+                    <td>{{ $total }} K</td>
                 </tr>
             </table>
 
@@ -112,4 +112,4 @@
     </div>
   </div>
 
-@endsection 
+@endsection
